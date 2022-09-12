@@ -1,0 +1,33 @@
+base:
+   random_state: 42
+
+
+data:
+  # Loading data
+  train_data: 'data/raw/train.csv'
+  test_data: 'data/raw/test.csv'
+  features_path: 'data/processed/featured.csv'
+  train_set_path: 'data/processed/train_set.csv'
+  validation_set_path: 'data/processed/validation_set.csv'
+  submission_data: 'data/processed/submissions.csv'
+
+
+
+train:
+  # Training, hyperparams
+  train_size: 0.85
+  model_params:
+    'verbose': 100
+    'learning_rate': 0.1
+    'eval_metric': 'Accuracy'
+  model_path: 'models/model.joblib'
+
+
+
+reports:
+  # Metrics, images, etc
+  metrics_file: 'reports/metrics.json'
+
+
+
+
